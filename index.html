@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -7,18 +8,6 @@
         
         <style>
             @import url('https://fonts.googleapis.com/css?family=Oswald');
-
-            body {
-                overflow-x: hidden;
-            }
-            nav {
-                background-color: rgb(255, 116, 0);
-            }
-            
-            li:hover {
-                text-decoration: underline;
-                color: blue;
-            }
             
             #dates {
                 font-family: 'Oswald';
@@ -29,6 +18,7 @@
                 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="common-styles.css">
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68962169-4"></script>
@@ -41,53 +31,53 @@
         </script>
     </head>
     
-<body>
-    
-    <nav class="navbar navbar-light navbar-expand-lg row">
-            <div class="col-12 col-md-7">
-                <img src="images/logo.png" class="col">
-            </div>
-          
-          <div class="col-12 col-md-5">
-              <a style="color: white;" class="navbar-brand" href="#">Ecstasia 2k18</a>
-              <button style="background-color: rgb(255, 149, 0);" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
+    <body>
 
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <a style="color: white;" class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
-                  </li>
-                    <li class="nav-item">
-                    <a style="color: white;" class="nav-link" href="#">Events </a>
-                  </li>
-                    <li class="nav-item">
-                    <a style="color: white;" class="nav-link" href="#">Sponsers</a>
-                  </li>
-                    <li class="nav-item">
-                    <a style="color: white;" class="nav-link" href="#">Register! </a>
-                  </li>
-                    <li class="nav-item">
-                    <a style="color: white;" class="nav-link" href="#">Get Directions</a>
-                  </li>
-                </ul>
-              </div>
+        <nav class="navbar navbar-light navbar-expand-lg row">
+                <div class="col-12 col-md-7">
+                    <img src="images/logo.png" class="col">
+                </div>
+
+              <div class="col-12 col-md-5">
+                  <a style="color: white;" class="navbar-brand" href="#">Ecstasia 2k18</a>
+                  <button style="background-color: rgb(255, 149, 0);" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+
+                  <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                      <li class="nav-item">
+                        <a style="color: white;" class="nav-link active" href="index.html">Home<span class="sr-only">(current)</span></a>
+                      </li>
+                        <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="events.html">Events </a>
+                      </li>
+                        <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#">Sponsers</a>
+                      </li>
+                        <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#">Register! </a>
+                      </li>
+                        <li class="nav-item">
+                        <a style="color: white;" class="nav-link" href="#">Get Directions</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+
+        <div class="row">
+            <div class="col-12 col-sm-4 text-center"> <img src="images/uem.png" height="200px" width="200px"> </div>
+            <div class="col text-center" id="dates"> <br>
+                <h3>University of Engineering & Management, Kolkata, hosts its very first Cultural Festival. Witness the madness on 17<sup>th</sup> and 18<sup>th</sup> January, 2018!</h3>
             </div>
-        </nav>
-    
-    <div class="row">
-        <div class="col-12 col-sm-4 text-center"> <img src="images/uem.png" height="200px" width="200px"> </div>
-        <div class="col text-center" id="dates"> <br>
-            <h3>University of Engineering & Management, Kolkata, hosts its very first Cultural Festival. Witness the madness on 17<sup>th</sup> and 18<sup>th</sup> January, 2018!</h3>
+            <div class="col-12 col-sm-4 text-center"> <img src="images/iem.png" height="200px" width="200px"> </div>
         </div>
-        <div class="col-12 col-sm-4 text-center"> <img src="images/iem.png" height="200px" width="200px"> </div>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-    
-    
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
     </body>
 </html>
