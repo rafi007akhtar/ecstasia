@@ -1,0 +1,15 @@
+body {
+    overflow-x: hidden;
+}
+nav {
+    background-color: rgb(255, 116, 0);
+}
+
+li:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.active {
+    border: 1px solid
+}
