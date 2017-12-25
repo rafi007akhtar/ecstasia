@@ -14,8 +14,28 @@
         
         <style>
             @import url('https://fonts.googleapis.com/css?family=Risque');
+            @import url('https://fonts.googleapis.com/css?family=Cinzel');
+            @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+            h3 {
+                font-family: "Cinzel";
+                border-bottom: 1px solid;
+                font-weight: 600;
+                text-align: center;
+                color: black;
+                background-color: aliceblue;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
+            p {
+                font-family: "Titillium Web";
+                text-align: justify;
+                font-size: 1.2em;
+                padding: 7px;
+                color: black;
+            }
             
-            a:hover {
+            #sidebar a:hover {
                 background-color: chartreuse;
             }
             
@@ -23,6 +43,17 @@
                 font-size: 20px;
                 background-color: coral;
                 font-family: 'Risque';
+            }
+            
+            .e-body {
+                background-image: url("images/gaming.jpg");
+                background-size: cover;
+                color: aliceblue;            
+            }
+            .event {
+                background-color: rgba(255,255,255,0.5);
+                margin-bottom: 15px;
+                border-radius: 10px;
             }
         </style>
         
@@ -83,8 +114,46 @@
         
         </div>
         
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <div class="e-body gaming container-fluid">
+            <!-- THE EVENTS BODY GETS IN HERE -->
+            
+            <br>
+             
+            <div id="treasure-hunt" class="event text-center event1">
+                <h3>Treasure Hunt</h3>
+                <p>Thrilled by the stories of Captain Jack Sparrow? Always been fascinated by the fantasy and adventurous spirit of R.L. Stevenson’s “Treasure Island”? Discover yourself along with your friends in the real world of treasure hunting as UEMK brings to you the key to unlock your treasure chest before others take it away. Follow your heart and become the Indiana Jones you wanted to be or the Lara Croft who you always aspired to become. Grab this chance to indulge in a fun filled ride of adventure and mystery and channel the inner treasure hunter in you.</p>
+                <button class="btn btn-primary">RULES</button>
+            </div>
+            
+            <br>
+            
+            <div id="treasure-hunt" class="event text-center event2">
+                <h3>Carrom</h3>
+                <p>Thrilled by the stories of Captain Jack Sparrow? Always been fascinated by the fantasy and adventurous spirit of R.L. Stevenson’s “Treasure Island”? Discover yourself along with your friends in the real world of treasure hunting as UEMK brings to you the key to unlock your treasure chest before others take it away. Follow your heart and become the Indiana Jones you wanted to be or the Lara Croft who you always aspired to become. Grab this chance to indulge in a fun filled ride of adventure and mystery and channel the inner treasure hunter in you.</p>
+                <button class="btn btn-primary">RULES</button>
+            </div>
+            
+            <br>
+            
+            <div id="table-tennis" class="event text-center event3">
+                <h3>Table Tennis</h3>
+                <p>Thrilled by the stories of Captain Jack Sparrow? Always been fascinated by the fantasy and adventurous spirit of R.L. Stevenson’s “Treasure Island”? Discover yourself along with your friends in the real world of treasure hunting as UEMK brings to you the key to unlock your treasure chest before others take it away. Follow your heart and become the Indiana Jones you wanted to be or the Lara Croft who you always aspired to become. Grab this chance to indulge in a fun filled ride of adventure and mystery and channel the inner treasure hunter in you.</p>
+                <button class="btn btn-primary">RULES</button>
+            </div>
+            &nbsp;
+        </div>
+        
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript">
+            var events = $(".event");
+            events.hide();
+            for (i = 1; i <=3; i++) {
+                var event = $(".event" + i);
+                event.fadeIn(3000);
+            }
+        </script>
     </body>
 </html>
