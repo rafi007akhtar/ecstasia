@@ -17,7 +17,7 @@
             @import url('https://fonts.googleapis.com/css?family=Cinzel');
             @import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
-            h3 {
+            h4 {
                 font-family: "Cinzel";
                 border-bottom: 1px solid;
                 font-weight: 600;
@@ -30,13 +30,16 @@
             p {
                 font-family: "Titillium Web";
                 text-align: justify;
-                font-size: 1.2em;
                 padding: 7px;
                 color: black;
             }
             
             #sidebar a:hover {
                 background-color: chartreuse;
+            }
+            li:hover {
+                text-decoration: none;
+                color: black;
             }
             
             #sidebar {
@@ -48,7 +51,6 @@
             .e-body {
                 background-image: url("images/gaming.jpg");
                 background-size: cover;
-                color: aliceblue;            
             }
             .event {
                 background-color: rgba(255,255,255,0.5);
@@ -120,25 +122,93 @@
             <br>
              
             <div id="treasure-hunt" class="event text-center event1">
-                <h3>Treasure Hunt</h3>
+                <h4>Treasure Hunt</h4>
                 <p>Thrilled by the stories of Captain Jack Sparrow? Always been fascinated by the fantasy and adventurous spirit of R.L. Stevenson’s “Treasure Island”? Discover yourself along with your friends in the real world of treasure hunting as UEMK brings to you the key to unlock your treasure chest before others take it away. Follow your heart and become the Indiana Jones you wanted to be or the Lara Croft who you always aspired to become. Grab this chance to indulge in a fun filled ride of adventure and mystery and channel the inner treasure hunter in you.</p>
-                <button class="btn btn-primary">RULES</button>
+                <button class="btn btn-primary" data-toggle="modal" data-target="#th-rules">RULES</button>
+                <button class="btn btn-warning" data-toggle="modal" data-target="#th-rounds">ROUNDS</button>
+                <a class="btn btn-success" href="https://goo.gl/forms/5nrD3lMxNTL4Ndd12" target="_blank">REGISTER</a>
+                
+                <div class="modal fade" id="th-rules" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Treasure Hunt Rules</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-left">
+                        <ul>
+                            <li>Max 5 members per team.</li>
+                            <li>All the participants of a single group must be from the same college. (Cross College not allowed)</li>
+                            <li>Any number of teams from a single college can register.</li>
+                            <li>Use of internet is not allowed.
+                            Participants can bring pen and paper for their own use.</li>
+                            <li>Rounds 1 and 2 may be skipped if less than 10 teams participate. The rules are subject to change.</li>
+                        </ul>
+                        <strong>Venue.</strong> Entire campus. <br>
+                        <strong>Judging.</strong> Team who solves all the clues and find the treasure first will be declared the winner. After the winners are found, the remaining teams will be given an alternative clue which will lead to another treasure to determine the second place. <br>
+                        <strong>Awards.</strong> There will be certificates and medals for First (1st) Place and Second (2nd) Place. <br>
+                        <strong>Coordinators.</strong> <br>
+                        Suvojit Jana: 9433035272 <br>
+                        Swastik Banerjee: 9051756702
+
+                        
+                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="modal fade" id="th-rounds" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Treasure Hunt Rounds</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-left">
+                        <ol>
+                            <li>(Elimination) <em>Jumble Words</em>. Participants will have to solve jumble words to go into Round 2. <em>First 15 teams to solve will go to Round 2.</em></li>
+                            <li>(Elimination) <em>Riddle Solve</em>. Participants will have to solve a set of 7-8 riddles to move to Round 3. <em>First 10 out of 15 Teams will advance to Round 3. Each team will be assigned a volunteer from this round onwards.</em></li>
+                            <li>(No elimination) All the teams will be given different sets of clue in each round which on solving will lead to the clue for the next round.</li>
+                            <li>(No elimination) Same as the previous round.</li>
+                            <li>(No elimination) Same as the previous round.</li>
+                            <li>(No elimination) This clue will lead to Treasure1.The team who finds the treasure first will be the winners.</li>
+                            <li>(No elimination) After the winners are declared the participants who were in Round 6 will be provided with an alternative clue which will lead to Treasure2. The teams who will reach Round 6 later will be provided with the alternative clue by the volunteer assigned to that team. The team which finds the Treasure2 first will be declared the runners-up.</li>
+                            
+                        </ol>                        
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
             </div>
             
             <br>
             
-            <div id="treasure-hunt" class="event text-center event2">
-                <h3>Carrom</h3>
-                <p>Thrilled by the stories of Captain Jack Sparrow? Always been fascinated by the fantasy and adventurous spirit of R.L. Stevenson’s “Treasure Island”? Discover yourself along with your friends in the real world of treasure hunting as UEMK brings to you the key to unlock your treasure chest before others take it away. Follow your heart and become the Indiana Jones you wanted to be or the Lara Croft who you always aspired to become. Grab this chance to indulge in a fun filled ride of adventure and mystery and channel the inner treasure hunter in you.</p>
+            <div id="tcarrom" class="event text-center event2">
+                <h4>Save The Queen</h4>
+                <p class="text-center"> <em>Save the Queen</em> is UEMK's Cultural Fest Open Carrom tournament.</p>
                 <button class="btn btn-primary">RULES</button>
+                <a class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSfkvWKiX-BR6hjC_M4IkjUbGYutxG7Uq7YtlSonoHuMWm3Lig/viewform?usp=sf_link" target="_blank">REGISTER</a>
             </div>
             
             <br>
             
             <div id="table-tennis" class="event text-center event3">
-                <h3>Table Tennis</h3>
-                <p>Thrilled by the stories of Captain Jack Sparrow? Always been fascinated by the fantasy and adventurous spirit of R.L. Stevenson’s “Treasure Island”? Discover yourself along with your friends in the real world of treasure hunting as UEMK brings to you the key to unlock your treasure chest before others take it away. Follow your heart and become the Indiana Jones you wanted to be or the Lara Croft who you always aspired to become. Grab this chance to indulge in a fun filled ride of adventure and mystery and channel the inner treasure hunter in you.</p>
+                <h4>Table Tennis</h4>
+                <p class="text-center">UEMK Cultural Fest Table Tennis tournament.</p>
                 <button class="btn btn-primary">RULES</button>
+                <a class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSfkvWKiX-BR6hjC_M4IkjUbGYutxG7Uq7YtlSonoHuMWm3Lig/viewform?usp=sf_link" target="_blank">REGISTER</a>
             </div>
             &nbsp;
         </div>
