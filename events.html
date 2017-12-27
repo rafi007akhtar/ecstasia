@@ -24,14 +24,12 @@
                 text-align: center;
                 color: black;
                 background-color: aliceblue;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
             }
             p {
                 font-family: "Titillium Web";
                 text-align: justify;
                 padding: 7px;
-                color: black;
+                color: aliceblue;
             }
             
             #sidebar a:hover {
@@ -53,9 +51,8 @@
                 background-size: cover;
             }
             .event {
-                background-color: rgba(255,255,255,0.5);
+                border-bottom: 1px solid white;
                 margin-bottom: 15px;
-                border-radius: 10px;
             }
         </style>
         
@@ -123,10 +120,14 @@
              
             <div id="treasure-hunt" class="event text-center event1">
                 <h4>Treasure Hunt</h4>
-                <p>Thrilled by the stories of Captain Jack Sparrow? Always been fascinated by the fantasy and adventurous spirit of R.L. Stevenson’s “Treasure Island”? Discover yourself along with your friends in the real world of treasure hunting as UEMK brings to you the key to unlock your treasure chest before others take it away. Follow your heart and become the Indiana Jones you wanted to be or the Lara Croft who you always aspired to become. Grab this chance to indulge in a fun filled ride of adventure and mystery and channel the inner treasure hunter in you.</p>
-                <button class="btn btn-primary" data-toggle="modal" data-target="#th-rules">RULES</button>
-                <button class="btn btn-warning" data-toggle="modal" data-target="#th-rounds">ROUNDS</button>
-                <a class="btn btn-success" href="https://goo.gl/forms/5nrD3lMxNTL4Ndd12" target="_blank">REGISTER</a>
+                <div class="row">
+                    <img src="images/sherlock.jpg" class="col-12 col-md-6" height="259px;">
+                    <div class="col">
+                        <p>Thrilled by the stories of Captain Jack Sparrow? Always been fascinated by the fantasy and adventurous spirit of R.L. Stevenson’s “Treasure Island”? Discover yourself along with your friends in the real world of treasure hunting as UEMK brings to you the key to unlock your treasure chest before others take it away. Follow your heart and become the Indiana Jones you wanted to be or the Lara Croft who you always aspired to become. Grab this chance to indulge in a fun filled ride of adventure and mystery and channel the inner treasure hunter in you.</p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#th-rules">RULES</button>
+                        <button class="btn btn-warning" data-toggle="modal" data-target="#th-rounds">ROUNDS</button>
+                        <a class="btn btn-success" href="https://goo.gl/forms/5nrD3lMxNTL4Ndd12" target="_blank">REGISTER</a></div>
+                </div>
                 
                 <div class="modal fade" id="th-rules" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
@@ -151,10 +152,7 @@
                         <strong>Awards.</strong> There will be certificates and medals for First (1st) Place and Second (2nd) Place. <br>
                         <strong>Coordinators.</strong> <br>
                         Suvojit Jana: 9433035272 <br>
-                        Swastik Banerjee: 9051756702
-
-                        
-                        
+                        Swastik Banerjee: 9051756702     
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
