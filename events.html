@@ -35,10 +35,6 @@
             #sidebar a:hover {
                 background-color: chartreuse;
             }
-            li:hover {
-                text-decoration: none;
-                color: black;
-            }
             
             #sidebar {
                 font-size: 20px;
@@ -78,7 +74,7 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto text-center">
+            <ul class="navbar-nav mr-auto text-center" style="padding-left: 10px;">
               <li class="nav-item">
                 <a style="color: white;" class="nav-link" href="index.html">Home</a>
               </li>
@@ -195,18 +191,165 @@
             
             <div id="tcarrom" class="event text-center event2">
                 <h4>Save The Queen</h4>
-                <p class="text-center"> <em>Save the Queen</em> is UEMK's Cultural Fest Open Carrom tournament.</p>
-                <button class="btn btn-primary">RULES</button>
-                <a class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSfkvWKiX-BR6hjC_M4IkjUbGYutxG7Uq7YtlSonoHuMWm3Lig/viewform?usp=sf_link" target="_blank">REGISTER</a>
+                <div class="row">
+                    <img src="images/carrom.jpg" class="col-12 col-md-6" height="259px;">
+                    <div class="col">
+                        <p>
+                            <em>Save the Queen</em> is UEMK's Cultural Fest Open Carrom tournament. Normal carrom rules are followed,  and the game may be played in singles or doubles. Click on the button below to review the rules of this game, although detailed rules will be provided before the match. <br>
+                            <u>Entry fee.</u>
+                            <li style="color: aliceblue" class="text-left"> ₹ 50 for singles</li>
+                            <li style="color: aliceblue" class="text-left"> ₹ 100 for doubles</li>
+                        </p>
+                    <button class="btn btn-primary" data-toggle="modal" data-target="#carrom-rules">RULES</button>
+                    <button class="btn btn-warning" data-toggle="modal" data-target="#carrom-prizes">PRIZES</button>
+                    <a class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSfkvWKiX-BR6hjC_M4IkjUbGYutxG7Uq7YtlSonoHuMWm3Lig/viewform?usp=sf_link" target="_blank">REGISTER</a></div>
+
+                    <div class="modal fade" id="carrom-rules" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Save the Queen Rules</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-left">
+                            <ul>
+                                <li>Normal Carrom rules would be followed.</li>
+                                <li>All the rules would be told before every match.</li>
+                                <li>3 boards games until semi-finals. No cover for Queen</li>
+                                <li>Game of 29 points for semi-finals and finals</li>
+                                <li>Any diameter of striker is allowed.</li>
+                                <li>Last time for registration: 12:30pm</li>
+                                <li>Judges' decision would be final.</li>
+                            </ul>
+                            <strong>Venue.</strong> UEMK campus. <br>
+                            <strong>Date.</strong> 17th January. <br>
+                            <strong>Time.</strong> 10 am onwards. <br>
+                            <strong>Coordinators.</strong> <br>
+                            Arka Roy: 7063636542 <br>
+                            Anik Bhaumik: 8013122183 <br>
+                            Saptarshi Roy Chowdhury: 8420803553
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="modal fade" id="carrom-prizes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Save the Queen Prizes</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-left">
+                            <strong>Doubles.</strong> <br>
+                            Winners: 1000 INR <br>
+                            Runners up: 600 INR <br>
+                            <strong>Girls singles.</strong> <br>
+                            Winners: 500 INR <br>
+                            Runners up: 300 INR <br>
+                            <strong>Boys singles.</strong> <br>
+                            Winners: 500 INR <br>
+                            Runners up: 300 INR <br>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+             
+             
+                </div>
+                
             </div>
             
             <br>
             
             <div id="table-tennis" class="event text-center event3">
                 <h4>Table Tennis</h4>
-                <p class="text-center">UEMK Cultural Fest Table Tennis tournament.</p>
-                <button class="btn btn-primary">RULES</button>
-                <a class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSfkvWKiX-BR6hjC_M4IkjUbGYutxG7Uq7YtlSonoHuMWm3Lig/viewform?usp=sf_link" target="_blank">REGISTER</a>
+                <div class="row">
+                    <img src="images/tt.png" class="col-12 col-md-6" height="259px;">
+                    <div class="col">
+                        <br>
+                        <p>
+                            UEMK Cultural Fest Table Tennis tournament, for both boys and girls, singles and doubles. All standard international table tennis rules apply. 
+                            <br> 
+                            For more rules, prizes and registration, click on the buttons below. For any queries, contact the coordinators. <br>
+                            <u>Entry fee.</u>
+                            <li style="color: aliceblue" class="text-left"> ₹ 50 for singles</li>
+                            <li style="color: aliceblue" class="text-left"> ₹ 100 for doubles</li>
+                        </p>
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#tt-rules">RULES</button>
+                        <button class="btn btn-warning" data-toggle="modal" data-target="#tt-prizes">PRIZES</button>
+                        <a class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSfkvWKiX-BR6hjC_M4IkjUbGYutxG7Uq7YtlSonoHuMWm3Lig/viewform?usp=sf_link" target="_blank">REGISTER</a>
+                    </div>
+                    
+                    <div class="modal fade" id="tt-rules" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Table Tennis Rules</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body text-left">
+                        <ul>
+                            <li>All preliminary matches will be of Best of 3; quarter final and semifinal will be of Best of 5 and Final will be of Best of 7.</li>
+                            <li>All set games will be of 11 points</li>
+                            <li>Match balls will be provided.</li>
+                            <li>Participants must carry personal racquets if they have.</li>
+                        </ul>
+                        <strong>Venue.</strong> UEMK campus. <br>
+                        <strong>Coordinators.</strong> <br>
+                        Saptarshi Roy Chowdhury: 9051184671 <br>
+                        Avik Das: 8420803553     
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                    
+                    <div class="modal fade" id="tt-prizes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Save the Queen Prizes</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-left">
+                            <strong>Doubles.</strong> <br>
+                            Winners: 1000 INR <br>
+                            Runners up: 600 INR <br>
+                            <strong>Girls singles.</strong> <br>
+                            Winners: 500 INR <br>
+                            Runners up: 300 INR <br>
+                            <strong>Boys singles.</strong> <br>
+                            Winners: 500 INR <br>
+                            Runners up: 300 INR <br>
+                            <strong>Second runners up</strong> <br>
+                            Medal and certificate
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+   
+               
+                </div>                
             </div>
             &nbsp;
         </div>
