@@ -122,7 +122,7 @@
                 <a href="#" class="col menu4" id="music"> <i class="fa fa-music"></i> MUSIC</a>
                 <a href="#" class="col menu5" id="photo"> <i class="fa fa-camera-retro"></i> PHOTOGRAPHY</a>
                 <a href="#" class="col menu6" id="informal"> <i class="fa fa-paint-brush"></i> INFORMALS</a>
-                <a href="#" class="col menu7"> <i class="fa fa-female"></i> DRAMA</a>
+                <a href="#" class="col menu7" id="drama"> <i class="fa fa-female"></i> DRAMA</a>
                 <a href="#" class="col menu8"> <i class="fa fa-pencil"></i> LITERATURE</a>
             </div> 
         
@@ -205,7 +205,6 @@
                 </div>
                 
             </div>
-            
             
             <div id="tcarrom" class="event text-center event2">
                 <h4>Save The Queen</h4>
@@ -1590,6 +1589,44 @@
                 </div>                
             </div>
         
+            <div id="street" class="event text-center event22">
+                <h4>Pather Daabi</h4>
+                <div class="row">
+                    <img src="images/face.jpg" class="col-12 col-md-6" height="450px">
+                    <div class="col">
+                        <br>
+                        <p class="back-solid">
+                            <em>Face painting.</em> This is an event for all those who dare to imagine that black and white are not the only colours in their palette. Satrangi lends you the platform  to celebrate your individuality. As we acknowledge rare gifts and out of the box ideas ; it will convince you that every human being has an artist within. Take those brushes and stroke your thoughts. Be proud, natural and confident. As Degas famously said , "Art is not what you see but what you make others see." <br>
+                            Number of participants: 1 + 1 <br>
+                            Time: 60 minutes <br>
+                            Theme: To be given onspot
+                        </p>
+                        <a href="files/UEM%20FP%20Rules.pdf" target="_blank" class="btn btn-primary">RULES</a>
+                        <button class="btn btn-warning" data-toggle="modal" data-target="#face-prizes">PRIZES</button>
+                        <a class="btn btn-success" href="https://docs.google.com/forms/d/e/1FAIpQLSeIzkgzUht-QGixhJT8Tp5WK7TLFnRLmOCPVoBPKXJvsoykfA/viewform" target="_blank">REGISTER</a>
+                    </div>
+                    
+                    <div class="modal fade" id="face-prizes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"> Satrangi Prizes</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body text-left">
+                            Coming soon.
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>               
+                </div>                
+            </div>
+        
             
             &nbsp;
         </div>
@@ -1658,6 +1695,15 @@
                     var event = $(".event" + i);
                     event.fadeIn(3000);
                 }
+            });
+            
+            $("#drama").click(function() {
+                for (var i = 1; i <=7; i++) 
+                    $(".menu"+i).removeClass("current");
+                $("#drama").addClass("current");
+                events.hide();
+                $(".e-body").css('background-image', 'url("images/drama.jpg")');
+                $(".event22").fadeIn(3000);
             });
             
             $("#gaming").click(function() {
