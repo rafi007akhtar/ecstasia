@@ -23,12 +23,17 @@
                 height: 400px;
                 background-color: grey;
             }
+            #gmap_canvas img {
+                max-width:none!important;background:none!important
+            }
 
         </style>
                 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/fontawesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="common-styles.css">
+        
+        <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyBBQL8cTKnkmbngZykmIHvQTA3XxGSDx5w'></script>
         
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-68962169-4"></script>
@@ -83,23 +88,54 @@
             </div>
             <div class="col-12 col-sm-4 text-center"> <img src="images/iem.png" height="200px" width="200px"> </div>
         </div>
+                
+        <div style='overflow:hidden;height:400px;width:520px;'>
+            <div id='gmap_canvas' style='height:400px;width:520px;'></div>
+        </div> 
+        <a href='https://www.add-map.net/'>add google map to my website</a>
         
-        <div id="map" style="width:400px;height:400px;background:yellow"></div>
+        <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f8856907a6a3a037ddfb137ce1da1fce33cb690e'></script>
+        <script type='text/javascript'>
+            function init_map() {
+                var myOptions = {
+                    zoom:12,center:new google.maps.LatLng(22.572646,88.36389499999996),mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+                map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                marker = new google.maps.Marker( {
+                    map: map,position: new google.maps.LatLng(22.572646,88.36389499999996)
+                });
+                infowindow = new google.maps.InfoWindow({content:'<strong>university of engineering & management, kolkata</strong><br><br> Kolkata<br>'});
+                google.maps.event.addListener(marker, 'click', function(){
+                    infowindow.open(map,marker);
+                });
+                infowindow.open(map,marker);
+            }
+            google.maps.event.addDomListener(window, 'load', init_map);
+        </script>
+        
+        <!--
+        <div id="maps">
+            
+        </div>
         
         <script>
-            function myMap() {
-                var mapOptions = {
-                    center: new google.maps.LatLng(51.5, -0.12),
-                    zoom: 10,
-                    mapTypeId: google.maps.MapTypeId.HYBRID
-                }
-                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            function initMap() {
+                var uluru = {lat: -25.363, lng: 131.044};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 4,
+                  center: uluru
+                });
+                var marker = new google.maps.Marker({
+                  position: uluru,
+                  map: map
+                });
             }
         </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBQL8cTKnkmbngZykmIHvQTA3XxGSDx5w&callback=initMap">
         </script>
+-->
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         
