@@ -84,27 +84,22 @@
             <div class="col-12 col-sm-4 text-center"> <img src="images/iem.png" height="200px" width="200px"> </div>
         </div>
         
-        <div id="maps">
-            
-        </div>
+        <div id="map" style="width:400px;height:400px;background:yellow"></div>
         
         <script>
-            function initMap() {
-                var uluru = {lat: -25.363, lng: 131.044};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 4,
-                  center: uluru
-                });
-                var marker = new google.maps.Marker({
-                  position: uluru,
-                  map: map
-                });
+            function myMap() {
+                var mapOptions = {
+                    center: new google.maps.LatLng(51.5, -0.12),
+                    zoom: 10,
+                    mapTypeId: google.maps.MapTypeId.HYBRID
+                }
+                var map = new google.maps.Map(document.getElementById("map"), mapOptions);
             }
         </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBQL8cTKnkmbngZykmIHvQTA3XxGSDx5w&callback=initMap">
         </script>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         
