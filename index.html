@@ -107,7 +107,7 @@
                     };
                     map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
                     marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(22.56086651848111,88.49059030179114)});
-                    infowindow = new google.maps.InfoWindow({content:'<strong>University of Engineering & Management (UEM), Kolkata</strong><br>LondonUniversity Area, Plot No. III - B/5, New Town, Action Area - III, Kolkata, West Bengal 700160,India<br>'});
+                    infowindow = new google.maps.InfoWindow({content:'<strong>University of Engineering & Management (UEM), Kolkata</strong><br>University Area, Plot No. III - B/5, New Town, Action Area - III, Kolkata, West Bengal 700160,India<br>'});
                     google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});
                     infowindow.open(map,marker);
                 }
